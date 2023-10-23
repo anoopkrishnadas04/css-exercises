@@ -26,4 +26,62 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  max-width: 350px;
+  margin: 16px;
+  padding: 16px;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header, .footer{
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 36px;
+  justify-content: flex-start;
+  padding: 0px 16px;
+}
+
+.footer {
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  flex: auto;
+}
+
+.sidebar {
+  flex: 0 0 auto;
+  padding: 0px 16px;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding-left: 0px;
+  gap: 8px;
+}
+
+.main{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 32px;
+  align-content: stretch;
+  justify-content: flex-start;
 }
